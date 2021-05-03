@@ -13,10 +13,10 @@
         <h1 style="text-align:center;"><b>CAR PRICE PREDICTION</b></h1>
         <form action = "{{url_for ('predict')}}" method="POST" style="text-align:center;">
             <label style="font-size:30px;">No.of KM's Driven   </label><br>
-            <input type="number" name="No.of KM's Driven" placeholder="No.of KM'S" required="required" step="any" style= "text-align : center;font-size : 20px;width : 375px"><br>
+            <input type="number" name="No.of KM's Driven" placeholder="No.of KM'S" min="100" required="required" step="any" style= "text-align : center;font-size : 20px;width : 375px"><br>
             <br>
             <label style="font-size:30px;text-align:center;">Showroom Price (In lacs)   </label><br>
-            <input type="number" name="Showroom Price" placeholder="Showroom Price (eg:-2.2)" required="required" step="any" style= "text-align : center;font-size : 20px;width : 375px"><br>
+            <input type="number" name="Showroom Price" placeholder="Showroom Price (eg:-2.2)" min="1" required="required" step="any" style= "text-align : center;font-size : 20px;width : 375px"><br>
             <br>
             <label style="font-size:30px;text-align:center;">Type of Fuel</label><br>
             <select name="Type of Fuel" id="fuel" required="required" style= "text-align : center;font-size : 20px;width : 375px">
